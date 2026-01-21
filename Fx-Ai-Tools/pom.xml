@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>fx-ai-project</artifactId>
+        <groupId>Spring-ai</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>fx-ai-tools</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>Spring-ai</groupId>
+            <artifactId>fx-ai-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>Spring-ai</groupId>
+            <artifactId>fx-ai-dataSource</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>Spring-ai</groupId>
+            <artifactId>fx-ai-cloud</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+        <!-- Source: https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <!--<version>4.1.1</version>-->  <!--  Kafka 4.x 系列（4.0+）需要Java 17+  -->
+            <!--  Kafka 3.x 系列（3.0+）需要Java 11+  -->
+            <version>2.8.1</version>  <!-- 这个版本兼容Java 8 -->
+            <scope>compile</scope>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>3.5.8</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- 内网构件仓库 -->
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>jar-releases</name>
+            <url>http://xxxxx/vrms-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>jar-snapshots</name>
+            <url>http://xxxxx/vrms-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>
