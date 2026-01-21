@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fx.software.cloud.client.FeignConfiguration,\
+  com.fx.software.cloud.client.RibbonRestTemplateConfiguration
