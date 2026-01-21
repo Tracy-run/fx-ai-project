@@ -1,0 +1,11 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fx.software.core.config.AsyncConfiguration,\
+  com.fx.software.core.config.DateTimeFormatConfiguration,\
+  com.fx.software.core.config.JacksonConfiguration,\
+  com.fx.software.core.config.TinyConfiguration,\
+  com.fx.software.core.config.WebMvcConfg,\
+  com.fx.software.core.config.ApplicationLifeConfiguration,\
+  com.fx.software.core.config.SnowFlakeConfiguration,\
+  com.fx.software.core.config.WebConfigurer,\
+  com.fx.software.core.config.apidoc.SwaggerAutoConfiguration,\
+  com.fx.software.core.gis.ArcgisService
