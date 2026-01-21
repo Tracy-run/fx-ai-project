@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fx.software.datasource.config.DruidDatasourceConfiguration
