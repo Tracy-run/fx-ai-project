@@ -36,7 +36,7 @@ public class ResponseWrapper<T> {
             return this;
         }
 
-        public Builder<T> msg(String msg) {
+        public Builder<T> message(String msg) {
             this.msg = msg;
             return this;
         }
