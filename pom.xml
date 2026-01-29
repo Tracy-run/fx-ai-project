@@ -17,6 +17,7 @@
         <module>fx-ai-cloud</module>
         <module>fx-ai-tools</module>
         <module>fx-ai-file</module>
+        <module>fx-ai-elasticsearch</module>
     </modules>
 
     <parent>
